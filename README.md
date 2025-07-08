@@ -1,6 +1,6 @@
 # FastC
 
-**FastC** is a lightweight REPL (Read-Eval-Print Loop) for the C programming language — built on top of [TinyCC (TCC)](https://bellard.org/tcc/). It lets you enter and evaluate C code **interactively**, much like Python’s `exec()` or Haskell's GHCi.
+**FastC** is a lightweight REPL (Read-Eval-Print Loop) for the C programming language — built on top of [TinyCC (TCC)](https://bellard.org/tcc/). It lets you enter and compile C code **interactively**
 
 ---
 
