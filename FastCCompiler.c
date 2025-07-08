@@ -66,6 +66,7 @@ int compile(const char *code) {
     }
 
     void (*run)() = tcc_get_symbol(state, "run");
+    
     if (!run) {
         fprintf(stderr, "[!] Couldn't find run symbol\n");
         free(memory);
@@ -111,6 +112,7 @@ void repl() {
         }
 
         char actual_code[MAX_CODE_SIZE + MAX_LINE_LEN + 128];
+
         snprintf(actual_code, sizeof(actual_code),
                  "%s\nvoid run() {\n%s%s\n}\n",
                  headers, line, strchr(line, ';') ? "" : ";");
