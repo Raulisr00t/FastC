@@ -123,7 +123,7 @@ void repl() {
     }
 }
 
-int main() {
+int main(void) {
     repl();
 
     return 0;
