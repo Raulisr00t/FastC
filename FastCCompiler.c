@@ -111,13 +111,13 @@ void repl() {
         }
 
         char actual_code[MAX_CODE_SIZE + MAX_LINE_LEN + 128];
-      
         snprintf(actual_code, sizeof(actual_code),
                  "%s\nvoid run() {\n%s%s\n}\n",
                  headers, line, strchr(line, ';') ? "" : ";");
 
         if (compile(actual_code) != 0)
             fprintf(stderr, "[!] Error executing line\n");
+            continue;
     }
 }
 
